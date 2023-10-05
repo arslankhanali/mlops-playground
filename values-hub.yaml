@@ -90,30 +90,30 @@ clusterGroup:
 
     # credit-fraud-model-app deployed using a hosted chart in my repo
     # This app 'infapp' can be commented out. Its not neccessary for the demo
-    infapp:
-      name: infapp
-      namespace: infapp
-      project: infapp
-      repoURL: https://arslankhanali.github.io/my-helm-charts/
-      chart: s2i
-      targetRevision: 0.0.2
-      overrides:
-      - name: appName
-        value: infapp
-      - name: namespace
-        value: infapp
-      - name: consoleLink.text
-        value: 'infapp'
-      - name: consoleLink.section
-        value: Gradio App 1
-      - name: environment.env[0].name
-        value: INFERENCE_ENDPOINT
-      - name: environment.env[0].value
-        value: http://modelmesh-serving.credit-fraud-model:8008/v2/models/credit-card-fraud/infer
-      - name: environment.env[1].name
-        value: 'env-variable-shouldnot-have-a-space'
-      - name: environment.env[1].value
-        value: testing adding another env
+    # infapp:
+    #   name: infapp
+    #   namespace: infapp
+    #   project: infapp
+    #   repoURL: https://arslankhanali.github.io/my-helm-charts/
+    #   chart: s2i
+    #   targetRevision: 0.0.2
+    #   overrides:
+    #   - name: appName
+    #     value: infapp
+    #   - name: namespace
+    #     value: infapp
+    #   - name: consoleLink.text
+    #     value: 'infapp'
+    #   - name: consoleLink.section
+    #     value: Gradio App 1
+    #   - name: environment.env[0].name
+    #     value: INFERENCE_ENDPOINT
+    #   - name: environment.env[0].value
+    #     value: http://modelmesh-serving.credit-fraud-model:8008/v2/models/credit-card-fraud/infer
+    #   - name: environment.env[1].name
+    #     value: 'env-variable-shouldnot-have-a-space'
+    #   - name: environment.env[1].value
+    #     value: testing adding another env
 
 
     vault:

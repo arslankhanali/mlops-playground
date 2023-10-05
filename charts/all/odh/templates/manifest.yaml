@@ -15,13 +15,13 @@ spec:
   startingCSV: opendatahub-operator.v1.10.0
   ---
   # Source: clustergroup/templates/core/subscriptions.yaml
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: opendatahub-operator
-  namespace: openshift-operators
-spec:
-  name: opendatahub-operator
-  source: community-operators
-  sourceNamespace: openshift-marketplace
-  installPlanApproval: Automatic
+# apiVersion: operators.coreos.com/v1alpha1
+# kind: Subscription
+# metadata:
+#   name: opendatahub-operator
+#   namespace: openshift-operators
+# spec:
+#   name: opendatahub-operator
+#   source: community-operators
+#   sourceNamespace: openshift-marketplace
+#   installPlanApproval: Automatic
