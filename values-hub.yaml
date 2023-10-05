@@ -10,14 +10,12 @@ clusterGroup:
     - openshift-storage
     - redhat-ods-operator
     - credit-fraud-model
-    - infapp
 
   projects:
     - hub
     - mlops
     - openshift-storage
     - credit-fraud-model
-    - infapp
 
   subscriptions:
     acm:
@@ -94,7 +92,7 @@ clusterGroup:
     #   name: infapp
     #   namespace: infapp
     #   project: infapp
-    #   repoURL: https://arslankhanali.github.io/my-helm-charts/
+    #   repoURL: https://arslankhanali.github.io/rc-helm-charts/
     #   chart: s2i
     #   targetRevision: 0.0.2
     #   overrides:
