@@ -32,7 +32,11 @@ clusterGroup:
       name: rhods-operator
       namespace: openshift-operators
       channel: stable
-
+    
+    pipeline:
+      name: openshift-pipelines-operator
+      namespace: openshift-operators
+      channel: stalatestble
     # odh:
     #   name: opendatahub-operator
     #   source: community-operators
