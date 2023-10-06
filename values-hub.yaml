@@ -62,11 +62,11 @@ clusterGroup:
         jsonPointers:
           - /spec/loggingCA
   
-    openshift-data-foundations:
-      name: openshift-data-foundations
-      namespace: openshift-storage
-      project: mlops
-      path: charts/all/openshift-data-foundations
+    # openshift-data-foundations:
+    #   name: openshift-data-foundations
+    #   namespace: openshift-storage
+    #   project: mlops
+    #   path: charts/all/openshift-data-foundations
     
     # mlflow:
     #   name: mlflow-server
