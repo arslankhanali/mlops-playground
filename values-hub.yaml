@@ -24,11 +24,11 @@ clusterGroup:
       channel: release-2.8
       #csv: advanced-cluster-management.v2.6.1
     
-    # odf: 
-    #   name: odf-operator
-    #   namespace: openshift-storage
-    #   channel: stable-4.13
-    #   startingCSV: odf-operator.v4.13.3-rhodf
+    open-data-foundation: 
+      name: odf-operator
+      namespace: openshift-storage
+      channel: stable-4.13
+      startingCSV: odf-operator.v4.13.3-rhodf
     
     rhods: 
       name: rhods-operator
@@ -62,22 +62,22 @@ clusterGroup:
         jsonPointers:
           - /spec/loggingCA
   
-    # openshift-data-foundations:
-    #   name: openshift-data-foundations
-    #   namespace: openshift-storage
-    #   project: mlops
-    #   path: charts/all/openshift-data-foundations
+    openshift-data-foundations:
+      name: openshift-data-foundations
+      namespace: openshift-storage
+      project: mlops
+      path: charts/all/openshift-data-foundations
     
-    # mlflow:
-    #   name: mlflow-server
-    #   namespace: mlops
-    #   project: mlops
-    #   path: charts/all/mlflow-server
-    #   overrides:
-    #   - name: odhApplication.enabled
-    #     value: true
-    #   - name: objectStorage.objectBucketClaim.enabled
-    #     value: true
+    mlflow:
+      name: mlflow-server
+      namespace: mlops
+      project: mlops
+      path: charts/all/mlflow-server
+      overrides:
+      - name: odhApplication.enabled
+        value: true
+      - name: objectStorage.objectBucketClaim.enabled
+        value: true
     
     jobs:
       name: jobs
