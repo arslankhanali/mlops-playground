@@ -1,3 +1,2 @@
 global:
-  name: mlops
-  namespace: mlops
+  namespace: ml

@@ -1,6 +1,6 @@
 apiVersion: v2
-description: An empty Helm chart
+description: A Helm chart to configure OpenDataHub
 keywords:
-- pattern
-name: blank
+- patterns
+name: opendatahub
 version: 0.0.1
