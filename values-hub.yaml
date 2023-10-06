@@ -75,7 +75,7 @@ clusterGroup:
       path: charts/all/mlflow-server
       overrides:
       - name: odhApplication.enabled
-        value: true
+        value: false
       - name: objectStorage.objectBucketClaim.enabled
         value: true
     
