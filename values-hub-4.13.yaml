@@ -1,0 +1,4 @@
+clusterGroup:
+  subscriptions:
+    odf:
+      channel: stable-4.13

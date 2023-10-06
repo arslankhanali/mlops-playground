@@ -27,6 +27,8 @@ clusterGroup:
     # odf: 
     #   name: odf-operator
     #   namespace: openshift-storage
+    #   channel: stable-4.13
+    #   startingCSV: odf-operator.v4.13.3-rhodf
     
     rhods: 
       name: rhods-operator
