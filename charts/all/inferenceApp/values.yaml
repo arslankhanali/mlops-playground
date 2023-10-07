@@ -1,6 +1,6 @@
 
-appName: credit-fraud-detection-demo
-namespace: credit-fraud-model
+appName:  inference-app
+namespace: inference-app
 uri: https://github.com/arslankhanali/credit-fraud-detection-demo
 contextDir: application
 originalimage: python:3.10.4

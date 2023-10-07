@@ -9,15 +9,15 @@ clusterGroup:
     - mlops
     - openshift-storage
     - redhat-ods-operator
-    - credit-fraud-model
     - inference-app
+    # - credit-fraud-model
 
   projects:
     - hub
     - mlops
     - openshift-storage
-    - credit-fraud-model
     - inference-app
+    # - credit-fraud-model
 
   subscriptions:
     acm:
