@@ -10,12 +10,14 @@ clusterGroup:
     - openshift-storage
     - redhat-ods-operator
     - credit-fraud-model
+    - inference-app
 
   projects:
     - hub
     - mlops
     - openshift-storage
     - credit-fraud-model
+    - inference-app
 
   subscriptions:
     acm:
@@ -30,10 +32,10 @@ clusterGroup:
       # channel: stable-4.13
       # startingCSV: odf-operator.v4.13.3-rhodf
     
-    # rhods: 
-    #   name: rhods-operator
-    #   namespace: openshift-operators
-    #   channel: stable
+    rhods: 
+      name: rhods-operator
+      namespace: openshift-operators
+      channel: stable
     
     # pipelines:
     #   name: openshift-pipelines-operator-rh
@@ -85,12 +87,12 @@ clusterGroup:
       project: default
       path: charts/all/jobs
 
-    # credit-fraud-model-app deployed using a local chart
-    # credit-fraud-model-app:
-    #   name: credit-fraud-model-app
-    #   namespace: credit-fraud-model
-    #   project: credit-fraud-model
-    #   path: charts/all/inferenceApp
+  ## credit-fraud-model-app deployed using a local chart
+    inference-app:
+      name: inference-app
+      namespace: inference-app
+      project: inference-app
+      path: charts/all/inferenceApp
 
     # credit-fraud-model-app deployed using a hosted chart in my repo
     # This app 'infapp' can be commented out. Its not neccessary for the demo
