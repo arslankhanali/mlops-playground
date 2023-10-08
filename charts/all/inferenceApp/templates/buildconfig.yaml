@@ -1,6 +1,8 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   name: {{ .Values.appName }}
   labels:
     app: {{ .Values.appName }}

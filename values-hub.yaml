@@ -70,16 +70,16 @@ clusterGroup:
       project: mlops
       path: charts/all/openshift-data-foundations
     
-    # mlflow:
-    #   name: mlflow-server
-    #   namespace: mlops
-    #   project: mlops
-    #   path: charts/all/mlflow-server
-    #   overrides:
-    #   - name: odhApplication.enabled
-    #     value: false
-    #   - name: objectStorage.objectBucketClaim.enabled
-    #     value: true
+    mlflow:
+      name: mlflow-server
+      namespace: mlops
+      project: mlops
+      path: charts/all/mlflow-server
+      overrides:
+      - name: odhApplication.enabled
+        value: false
+      - name: objectStorage.objectBucketClaim.enabled
+        value: true
     
     jobs:
       name: jobs
