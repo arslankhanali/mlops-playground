@@ -37,9 +37,10 @@ clusterGroup:
       namespace: openshift-operators
       channel: stable
     
-    # pipelines:
-    #   name: openshift-pipelines-operator-rh
-    #   source: redhat-operators
+    pipelines:
+      name: openshift-pipelines-operator-rh
+      namespace: openshift-serverless
+      source: redhat-operators
 
     # opendatahub:
     #   name: opendatahub-operator
